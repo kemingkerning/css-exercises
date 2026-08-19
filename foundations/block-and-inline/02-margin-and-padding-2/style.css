@@ -1,20 +1,41 @@
 body {
   background: gray;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 .card {
   width: 400px;
   background: white;
   margin: 16px auto;
+  padding: 0.67em;
+}
+
+h1 {
+  font-size: 16px;
 }
 
 .title,
 .content,
 .button-container {
   background: dodgerblue;
+  padding: 8px;
+}
+
+.content {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 0.67em 0;
+}
+.button-container {
+  display: flex;
+  justify-content: center; /*centers items horizontally*/
+  align-items: center; /*centers items vertically*/
+  flex-direction: column;
 }
 
 button {
+  padding: 8px 16px;
   background: white;
+  border-color: hsl(0,0%,15%);
 }
