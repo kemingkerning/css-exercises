@@ -27,6 +27,7 @@ h1 {
   padding-bottom: 16px;
   margin: 0.67em 0;
 }
+
 .button-container {
   display: flex;
   justify-content: center; /*centers items horizontally*/
@@ -39,3 +40,17 @@ button {
   background: white;
   border-color: hsl(0,0%,15%);
 }
+
+/* corrections
+.title {
+  font-size: 16px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin: 0 auto; CSS margin-auto only works on block elements
+}*/
