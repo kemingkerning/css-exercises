@@ -53,4 +53,6 @@ button {
 .button {
   display: block;
   margin: 0 auto; CSS margin-auto only works on block elements
-}*/
+}
+
+the difference between display:block and display:flex is that flex is a block level display type applied on a container with child elements where you can align all child elements with a single property (justify-content and align-items). using display:block, you would need to set margin: 0 auto; for ech child element.*/
