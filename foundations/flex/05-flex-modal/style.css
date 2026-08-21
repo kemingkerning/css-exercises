@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -66,4 +71,39 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* correction: dont need to style content-container at all if youre not using gap because the elements in this container are all block so go onto next line anyway
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+  */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 18px;
+}
+/*correction: dont need a button container
+.button-container {
+  display: flex;
+  gap: 8px;
+}
+  */
+
+/*corrections: even though setting gap:16px works, in design theory you dont want everything to have the same gap. in which case it is better practice to specify margin bottom for each element, so that the gap/margin can be different for each element*/
+
+.header-container {
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
 }
