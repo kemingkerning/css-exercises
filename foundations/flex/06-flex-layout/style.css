@@ -24,3 +24,58 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  padding:0;
+}
+
+a{
+  text-decoration: none;
+  color: hsl(0,0%, 50%);
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  /*correction: dont need position fixed
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  */
+  background-color: #eeeeee;
+}
+
+.input {
+  margin: 16px 0;
+}
+
+.buttons button {
+  padding: 8px 16px;
+}
+
+/*corrections*/
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  justify-content: center; /*since flex direction is column, this takes the height of the content div that does not have content and even distributes it between top and bottom of the content div. the height of the content div is the entire vertical distance between .header and .footer because flex is set to 1, meaning flex basis: 0%, flex-grow: 1, flex-shrink: 1;*/
+  flex: 1;
+}
